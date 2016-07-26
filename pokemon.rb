@@ -21,9 +21,9 @@ class Pokemon
 
 end
 
-p=Pokemon.new 'Bulbazaur', 20
-puts p.name
-puts p.cp
-puts p.power_up 100
-puts p.power_down 10
-puts p.info
+# p=Pokemon.new 'Bulbazaur', 20
+# puts p.name
+# puts p.cp
+# puts p.power_up 100
+# puts p.power_down 10
+# puts p.info
