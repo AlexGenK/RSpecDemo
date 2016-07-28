@@ -1,23 +1,30 @@
+# класс - покемон
+
 class Pokemon
 
-    attr_reader :name, :cp
+  # у каждого покемона есть имя и сила    
+  attr_reader :name, :cp
 
-    def initialize(name, cp=0)
-      @name=name.capitalize
-      @cp=cp
-    end
+  # при создании покемона имя начинается с большой буквы, а сила (если не указано) равна 0
+  def initialize(name, cp=0)
+    @name=name.capitalize
+    @cp=cp
+  end
 
-    def power_up(pow)
-      @cp+=pow.to_i
-    end
+  # увеличение силы на pow
+  def power_up(pow)
+    @cp+=pow.to_i
+  end
 
-    def power_down(pow)
-      @cp-=pow.to_i
-    end
+  # уменьшение силы на pow
+  def power_down(pow)
+    @cp-=pow.to_i
+  end
 
-    def info
-      "#{@name}-#{@cp}"
-    end
+  # вывод информации о покемоне
+  def info
+    "#{@name}-#{@cp}"
+  end
 
 end
 
