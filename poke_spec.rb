@@ -2,7 +2,12 @@
 require './pokemon.rb'
 
 # тестируем класс-покемон
-describe Pokemon do 
+describe Pokemon do
+
+  # код, исполняемый в начале каждого теста
+  before do
+    # но сейчас он пуст
+  end 
 
   # проверяем, становится ли заглавной первая буква имени
   it "has a capitalized name" do
