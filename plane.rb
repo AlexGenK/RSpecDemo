@@ -1,7 +1,8 @@
 # класс - самолет
+
 class Boeing737
 
-  KILOGRAMM_PER_HOUR=2600
+  KILOGRAMMS_PER_HOUR=2600
 
   attr_reader :fuel
 
@@ -19,6 +20,6 @@ class Boeing737
 
 end
 
-plane=Boeing737.new
-plane.add_fuel 20.000
-puts "Flight duration is #{plane.flight_duration} hours"
+# plane=Boeing737.new
+# plane.add_fuel 20.000
+# puts "Flight duration is #{plane.flight_duration} hours"
