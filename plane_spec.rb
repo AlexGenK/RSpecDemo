@@ -9,8 +9,8 @@ describe Boeing737 do
 
   it "can add fuel" do
     pln=Boeing737.new
-    pln.add_fuel 3.000
-    expect(pln.fuel).to eq 3.000
+    pln.add_fuel 3_000
+    expect(pln.fuel).to eq 3_000
   end
 
   it "must show flight duration" do
@@ -18,7 +18,7 @@ describe Boeing737 do
     pln=Boeing737.new
 
     # act
-    pln.add_fuel 5.200
+    pln.add_fuel 5_200
 
     # assert
     expect(pln.flight_duration).to eq 2

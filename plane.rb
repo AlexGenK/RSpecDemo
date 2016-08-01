@@ -15,7 +15,7 @@ class Boeing737
   end
 
   def flight_duration
-    0
+    @fuel/KILOGRAMMS_PER_HOUR
   end
 
 end
